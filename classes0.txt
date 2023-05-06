@@ -1,0 +1,22 @@
+Classes Concept Sheet
+(all names are placeholders)
+
+"rogue"
+fast / glass cannon / stealth driven gameplay / mid-close range
+weapons - throwing needles, daggers, poison, hooks
+
+"ironclad"
+slow / tank / damage sponge / knockback heavy
+weapons - war mauls, clubs, swords, shields
+
+"paladin"
+medium / regen and status mit / holy spell casting / mid-range
+weapons - staves, whips, mace, flail, holy items
+
+"ronan"
+medium-fast / hack and slash / cooldown mobility / dual wield
+weapons - katana, shortswords, staffs, batons
+
+"recluse"
+medium-slow / ranged casting / dark spell casting / long-range
+weapons - wands, spellbooks, alchemy, cloaks
