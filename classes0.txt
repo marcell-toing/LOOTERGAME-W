@@ -1,22 +1,37 @@
 Classes Concept Sheet
 (all names are placeholders)
 
+K E Y
+"name"
+SPEED / PLAYER FOCUS / GAMEPLAY / COMBAT TYPE
+~weaponry~
+class description: COMING SOON
+
 "rogue"
-fast / glass cannon / stealth driven gameplay / mid-close range
+fast / glass cannon / stealth driven gameplay / mid-close range attrition
 weapons - throwing needles, daggers, poison, hooks
 
 "ironclad"
-slow / tank / damage sponge / knockback heavy
+slow / tank / damage sponge / close range knockback
 weapons - war mauls, clubs, swords, shields
 
 "paladin"
-medium / regen and status mit / holy spell casting / mid-range
-weapons - staves, whips, mace, flail, holy items
+medium / regen and status mit / holy spell casting / mid-close range holy
+weapons - staves, spear, mace, flail, holy items
 
 "ronan"
-medium-fast / hack and slash / cooldown mobility / dual wield
-weapons - katana, shortswords, staffs, batons
+medium-fast / hack and slash / cooldown mobility / dual wield bleeding
+weapons - katana, curved swords, staffs, batons
 
 "recluse"
-medium-slow / ranged casting / dark spell casting / long-range
+medium-slow / ranged casting / dark spell casting / long range magics
 weapons - wands, spellbooks, alchemy, cloaks
+
+"hunter"
+fast / assassination / tracking and roaming / long range archery
+weapons - shortbow, crossbow, short sword, bowie knife, whip
+DL:
+Hunter specializes in long distance sniping tactics to dispense of unaware opponents. 
+
+"tinkerer"
+slow / combat machinery / diversion and demolition / bombadier
