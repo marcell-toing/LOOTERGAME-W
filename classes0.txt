@@ -20,5 +20,3 @@ weapons - katana, shortswords, staffs, batons
 "recluse"
 medium-slow / ranged casting / dark spell casting / long-range
 weapons - wands, spellbooks, alchemy, cloaks
-
-ADD GABOS CHANGE TO TEXT
