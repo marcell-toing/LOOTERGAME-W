@@ -1,5 +1,6 @@
-Classes Concept Sheet
+# Classes Concept Sheet
 (all names are placeholders)
+
 
 K E Y
 "name"
@@ -7,21 +8,22 @@ SPEED / PLAYER FOCUS / GAMEPLAY / COMBAT TYPE
 ~weaponry~
 class description: COMING SOON
 
+
 "rogue"
 fast / glass cannon / stealth driven gameplay / mid-close range attrition
 weapons - throwing needles, daggers, poison, hooks
 
 "ironclad"
 slow / tank / damage sponge / close range knockback
-weapons - war mauls, clubs, swords, shields
+weapons - war maul, club, sword, shield
 
 "paladin"
 medium / regen and status mit / holy spell casting / mid-close range holy
-weapons - staves, spear, mace, flail, holy items
+weapons - stave, spear, mace, flail, holy item
 
 "ronan"
 medium-fast / hack and slash / cooldown mobility / dual wield bleeding
-weapons - katana, curved swords, staffs, batons
+weapons - katana, curved sword, staff, baton
 
 "recluse"
 medium-slow / ranged casting / dark spell casting / long range magics
@@ -31,7 +33,20 @@ weapons - wands, spellbooks, alchemy, cloaks
 fast / assassination / tracking and roaming / long range archery
 weapons - shortbow, crossbow, short sword, bowie knife, whip
 DL:
-Hunter specializes in long distance sniping tactics to dispense of unaware opponents. 
+Hunter specializes in long distance sniping tactics to dispense of unsuspecting opponents. 
 
 "tinkerer"
 slow / combat machinery / diversion and demolition / bombadier
+weapon - grenade, bomb, cannon
+
+"swashbuckler"
+medium / sword 'n' shield / parry and dodge / solo fighter
+weapons - epee, buckler, longsword, cape 
+
+"bardic"
+fast / song magic / buffs and debuffs / team player 
+weapons - musical instruments
+
+"shaman"
+medium-fast / nature incantations / healing and mysticism / party healing
+weapons - quarterstaff, walking stick, totem
