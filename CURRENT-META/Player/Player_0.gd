@@ -7,13 +7,17 @@ extends CharacterBody2D
 @export var MAX_SPEED : int = 500 
 @export var ACCELERATION : int = 3000 
 @export var FRICTION : int = 1200 
+
+
+
 var direction = Vector2.ZERO
 var last_direction = Vector2.RIGHT
+var active_animation = "idle0"
 
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _ready():
-	animated_sprite.play("idle0")
+	animated_sprite.play(active_animation)
 
 func _physics_process(delta):
 	move(delta)
@@ -52,9 +56,9 @@ func move(delta):
 	move_and_slide()
 
 func update_animation():
-	if direction != Vector2.ZERO:
-		var angle = wrapi(int(direction.angle() / (PI/4)), 0, 8)
-		animated_sprite.play("run" + str(angle))
+	if direction == Vector2.ZERO:
+		active_animation = "idle"
 	else:
-		var angle = wrapi(int(last_direction.angle() / (PI/4)), 0, 8)
-		animated_sprite.play("idle" + str(angle))
+		active_animation = "run"
+	var animationDir = wrapi(int(last_direction.angle() / (PI/4)), 0, 8)
+	animated_sprite.play(active_animation + str(animationDir))

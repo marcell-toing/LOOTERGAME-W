@@ -94,10 +94,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_fmsu8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_fmsu8")
+"texture": ExtResource("4_ntxjj")
 }],
 "loop": true,
 "name": &"idle0",
@@ -105,10 +102,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_2sm8x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_2sm8x")
+"texture": ExtResource("5_ar4a8")
 }],
 "loop": true,
 "name": &"idle1",
@@ -116,10 +110,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_ntxjj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_ntxjj")
+"texture": ExtResource("6_j75yk")
 }],
 "loop": true,
 "name": &"idle2",
@@ -127,10 +118,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_ar4a8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_ar4a8")
+"texture": ExtResource("7_pw0f1")
 }],
 "loop": true,
 "name": &"idle3",
@@ -138,10 +126,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_j75yk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_j75yk")
+"texture": ExtResource("8_ppobg")
 }],
 "loop": true,
 "name": &"idle4",
@@ -149,21 +134,15 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_pw0f1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_pw0f1")
+"texture": ExtResource("9_iwagg")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle5",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_ppobg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_ppobg")
+"texture": ExtResource("2_fmsu8")
 }],
 "loop": true,
 "name": &"idle6",
@@ -171,12 +150,9 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_iwagg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_iwagg")
+"texture": ExtResource("3_2sm8x")
 }],
-"loop": false,
+"loop": true,
 "name": &"idle7",
 "speed": 5.0
 }, {
@@ -463,14 +439,14 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_n6bnq")
-MAX_SPEED = 250
-ACCELERATION = 225
-FRICTION = 6759
+MAX_SPEED = 80
+ACCELERATION = 30
+FRICTION = 70
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, 0)
 sprite_frames = SubResource("SpriteFrames_uxeid")
-animation = &"run7"
+animation = &"idle0"
 offset = Vector2(0, -205)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
