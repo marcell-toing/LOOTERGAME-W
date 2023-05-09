@@ -1,6 +1,6 @@
-[gd_scene load_steps=92 format=3 uid="uid://brvcslmi7657m"]
+[gd_scene load_steps=92 format=3]
 
-[ext_resource type="Script" path="res://Player_0.gd" id="1_n6bnq"]
+[ext_resource type="Script" path="res://Player/Player_0.gd" id="1_n6bnq"]
 [ext_resource type="Texture2D" uid="uid://inwlbbd2ay5d" path="res://Default_Male/idle/Male_0_Idle0.png" id="2_fmsu8"]
 [ext_resource type="Texture2D" uid="uid://bbolxrty0aom2" path="res://Default_Male/idle/Male_1_Idle0.png" id="3_2sm8x"]
 [ext_resource type="Texture2D" uid="uid://da4pd5mnlwuku" path="res://Default_Male/idle/Male_2_Idle0.png" id="4_ntxjj"]
@@ -81,34 +81,24 @@
 [ext_resource type="Texture2D" uid="uid://cwxmw50jhxenu" path="res://Default_Male/run/Male_7_Run9.png" id="79_xf3f6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5nsxq"]
-load_path = "res://.godot/imported/Male_0_Run0.png-0084d60f7ec58660c9c796b7a9710ec3.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ibt1q"]
-load_path = "res://.godot/imported/Male_0_Run1.png-7549b8d4e64c515b7cc8f7800f2a8b17.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fvf14"]
-load_path = "res://.godot/imported/Male_0_Run2.png-533b3984b650288be7c55cfd5da600e4.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yexv2"]
-load_path = "res://.godot/imported/Male_0_Run3.png-a33b032af49e701103461748c3734c29.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vyrc5"]
-load_path = "res://.godot/imported/Male_0_Run4.png-9ef36aef95b6f8344a79c42b71728a19.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rddih"]
-load_path = "res://.godot/imported/Male_0_Run5.png-5b9600d107737f2c6b8d4e856319a4d7.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1s5b7"]
-load_path = "res://.godot/imported/Male_0_Run6.png-b5f0fb0afda1a7a809857823051db621.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1l7sp"]
-load_path = "res://.godot/imported/Male_0_Run7.png-80b386f08cf614df013fd2113430f722.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bviwb"]
-load_path = "res://.godot/imported/Male_0_Run8.png-00694114c5eff431157872c773b04a94.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ukp88"]
-load_path = "res://.godot/imported/Male_0_Run9.png-14505d85fabd495b347a7e19b390818a.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uxeid"]
 animations = [{

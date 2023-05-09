@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://dmqcphpftj40p"]
+[gd_scene load_steps=76 format=3 uid="uid://j48qi06tfpa0"]
 
 [ext_resource type="Texture2D" uid="uid://b7v5t8brlh42m" path="res://Isometric/dirtTiles_E.png" id="1_juher"]
 [ext_resource type="Texture2D" uid="uid://dqaa8k2u6egb8" path="res://Isometric/dirtTiles_N.png" id="2_kjstt"]
@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://cpwoxwba2jk7c" path="res://Isometric/planksBroken_E.png" id="35_x5fk0"]
 [ext_resource type="Texture2D" uid="uid://1aul6houtanu" path="res://Isometric/planksBroken_N.png" id="36_cggsc"]
 [ext_resource type="Script" path="res://Floor.gd" id="37_1qgnd"]
-[ext_resource type="PackedScene" uid="uid://brvcslmi7657m" path="res://player.tscn" id="38_gfigk"]
+[ext_resource type="PackedScene" uid="uid://brvcslmi7657m" path="res://Player/player.tscn" id="38_xc1nf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nh3t5"]
 texture = ExtResource("1_juher")
@@ -295,6 +295,8 @@ format = 2
 position = Vector2(-295, -323)
 format = 2
 
-[node name="Player" parent="." instance=ExtResource("38_gfigk")]
-position = Vector2(492, 262)
-motion_mode = 1
+[node name="Player" parent="." instance=ExtResource("38_xc1nf")]
+position = Vector2(501, 265)
+MAX_SPEED = null
+ACCELERATION = null
+FRICTION = null
