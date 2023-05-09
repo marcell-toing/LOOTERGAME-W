@@ -9,15 +9,12 @@ extends CharacterBody2D
 @export var  FRICTION : int = 1200 
 
 
-var curent_animation = "idle" # TBD implement animations
+var current_animation = "idle" # TBD implement animations
 var direction = Vector2.ZERO
-
+var a = 3
 
 func _physics_process(delta):
 	move(delta)
-
-
-
 
 
 func cartesian_to_isometric(vector):
@@ -51,6 +48,25 @@ func move(delta):
 	else:
 		var motion = direction * ACCELERATION * delta
 		var iso_motion = cartesian_to_isometric(motion)
-		apply_movement(iso_motion) 
+		apply_movement(iso_motion)
 
-	move_and_slide()	
+	move_and_slide()
+
+	func _process(delta):
+		current_animation = "idle"
+		var input_dir = Vector2.ZERO
+		if Input.is_action_pressed("right"):
+			input_dir.x += 1
+		if Input.is_action_pressed("left"):
+			input_dir.x -= 1
+		if Input.is_action_pressed("down"):
+			input_dir.y += 1
+		if Input.is_action_pressed("up"):
+			input_dir.y -= 1
+		input_dir = input_dir.normalized()
+		if input_dir.length() != 0:
+			a = input_dir.angle() / (PI/4)
+			a = wrapi(int(a), 0, 8)
+			current_animation = "run"
+	
+		$AnimatedSprite.animation = current_animation + str(a)
