@@ -14,7 +14,9 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_onc15"]
 texture = ExtResource("1_7janl")
-texture_region_size = Vector2i(256, 128)
+margins = Vector2i(0, 68)
+texture_region_size = Vector2i(256, 148)
+0:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3bte"]
 texture = ExtResource("2_05cyj")
@@ -48,11 +50,15 @@ texture_region_size = Vector2i(256, 148)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3qlyf"]
 texture = ExtResource("7_i3ta5")
-texture_region_size = Vector2i(256, 128)
+margins = Vector2i(0, 68)
+texture_region_size = Vector2i(256, 148)
+0:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_edu4g"]
 texture = ExtResource("8_lbwfs")
-texture_region_size = Vector2i(256, 128)
+margins = Vector2i(0, 68)
+texture_region_size = Vector2i(256, 148)
+0:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f238k"]
 texture = ExtResource("9_t6vpt")
@@ -79,13 +85,13 @@ position = Vector2(39, 67)
 
 [node name="Floor" type="TileMap" parent="."]
 y_sort_enabled = true
-position = Vector2(621, 257)
+position = Vector2(343, 232)
 tile_set = SubResource("TileSet_5wixc")
 cell_quadrant_size = 32
 format = 2
 layer_0/y_sort_enabled = true
 layer_0/z_index = -1
-layer_0/tile_data = PackedInt32Array(-65537, 1, 2, 65535, 2, 2, -2, 3, 2, -65536, 4, 2, -131072, 4, 2, 131071, 8, 2, 131072, 4, 2, 1, 4, 2, -65535, 8, 2, -131071, 8, 2, -196608, 8, 2, 262143, 4, 2, 196607, 5, 2, 131070, 4, 2, 65534, 4, 2, -3, 8, 2, -65538, 8, 2, -131074, 4, 2, -196609, 4, 2, -131073, 4, 2, -262144, 8, 2, -262145, 8, 2, -65539, 8, 2, -4, 8, 2, -131075, 8, 2, -196610, 8, 2, -262146, 8, 2, -262143, 4, 2, -327680, 4, 2, -393216, 4, 2, -196607, 4, 2, -131070, 4, 2, 2, 4, 2, 65536, 2, 2, 0, 8, 2, -1, 8, 2)
+layer_0/tile_data = PackedInt32Array(-65536, 4, 2, -131072, 4, 2, 131071, 8, 2, 131072, 4, 2, 1, 4, 2, -65535, 8, 2, -131071, 8, 2, -196608, 8, 2, 262143, 4, 2, 196607, 5, 2, 131070, 4, 2, 65534, 4, 2, -3, 8, 2, -65538, 8, 2, -131074, 4, 2, -196609, 7, 2, -131073, 4, 2, -262144, 8, 2, -262145, 8, 2, -65539, 8, 2, -4, 8, 2, -131075, 8, 2, -196610, 6, 2, -262146, 8, 2, -262143, 4, 2, -327680, 4, 2, -393216, 4, 2, -196607, 4, 2, -131070, 4, 2, 2, 4, 2, 65536, 2, 2, 0, 8, 2, -65537, 7, 2, -2, 6, 2, -1, 5, 2, 65535, 4, 2)
 script = ExtResource("37_1qgnd")
 
 [node name="Walls" type="TileMap" parent="."]

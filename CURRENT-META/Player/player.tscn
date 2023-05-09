@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=3 uid="uid://dk40yx8a28ivn"]
+[gd_scene load_steps=91 format=3 uid="uid://dk40yx8a28ivn"]
 
 [ext_resource type="Script" path="res://Player/Player_0.gd" id="1_n6bnq"]
 [ext_resource type="Texture2D" uid="uid://inwlbbd2ay5d" path="res://Default_Male/idle/Male_0_Idle0.png" id="2_fmsu8"]
@@ -471,18 +471,15 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5v1or"]
-height = 118.0
-
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_n6bnq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, 0)
 sprite_frames = SubResource("SpriteFrames_uxeid")
-animation = &"idle0"
+animation = &"run3"
+frame_progress = 0.915691
 offset = Vector2(0, -205)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, -63)
-shape = SubResource("CapsuleShape2D_5v1or")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-11, 3, -29, -6, -29, -21, -11, -30, 16, -30, 33, -21, 33, -8, 16, 3)
