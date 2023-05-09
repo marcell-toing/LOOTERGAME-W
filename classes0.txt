@@ -1,8 +1,6 @@
-inducing commit discrepancy
 # Classes Concept Sheet
 (all names are placeholders)
 
-BLIH BLIH BLIH
 
 K E Y
 "name"
