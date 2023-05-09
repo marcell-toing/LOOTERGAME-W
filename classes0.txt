@@ -2,7 +2,7 @@ inducing commit discrepancy
 # Classes Concept Sheet
 (all names are placeholders)
 
-BLAH BLAH BLAH BLAH 
+BLIH BLIH BLIH
 
 K E Y
 "name"
