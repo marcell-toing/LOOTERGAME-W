@@ -125,6 +125,3 @@ format = 2
 
 [node name="Player" parent="." instance=ExtResource("38_xc1nf")]
 position = Vector2(467, 295)
-MAX_SPEED = 160
-ACCELERATION = 1500
-FRICTION = 1200
