@@ -10,29 +10,24 @@ extends CharacterBody2D
 
 
 var curent_animation = "idle" # TBD implement animations
-var axis = Vector2.ZERO
+var direction = Vector2.ZERO
+
 
 func _physics_process(delta):
 	move(delta)
 
-#tbd should we wrap Input with int()?
-func get_input_axis():
-	axis.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
-	axis.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
-	return axis.normalized()
+
+
+
+
+func cartesian_to_isometric(vector):
+	return Vector2(vector.x - vector.y, (vector.x + vector.y) / 2)
 	
+func get_input_direction(): #tbd should we wrap Input with int()?
+	direction.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+	direction.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
+	return direction.normalized()
 	
-func move(delta):
-	axis = get_input_axis()
-
-	if axis == Vector2.ZERO:
-		apply_friction(FRICTION * delta)
-		
-	else:
-		apply_movement(axis * ACCELERATION * delta) 
-
-	move_and_slide()	
-
 
 func apply_friction(amount):
 	if velocity.length() > amount:
@@ -44,3 +39,18 @@ func apply_friction(amount):
 func apply_movement(accel):
 	velocity += accel
 	velocity = velocity.limit_length(MAX_SPEED)
+
+
+func move(delta):
+	direction = get_input_direction()
+
+	if direction == Vector2.ZERO:
+		var motion = FRICTION * delta
+		apply_friction(motion)
+		
+	else:
+		var motion = direction * ACCELERATION * delta
+		var iso_motion = cartesian_to_isometric(motion)
+		apply_movement(iso_motion) 
+
+	move_and_slide()	
