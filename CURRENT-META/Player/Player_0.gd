@@ -4,10 +4,9 @@ extends CharacterBody2D
 #@export makes variables easily editable from the EDITOR
 #TBD seems type checking is 100% needed here? but doc doesnt suggest so? confusion
 @export_category("OUR SPEED VARS")
-@export var MAX_SPEED : int = 500 
-@export var ACCELERATION : int = 3000 
-@export var FRICTION : int = 1200 
-
+@export var MAX_SPEED : int = 1000 
+@export var ACCELERATION : int = 2000 
+@export var FRICTION : int = 8000 
 
 
 var direction = Vector2.ZERO
