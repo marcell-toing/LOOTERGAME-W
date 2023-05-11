@@ -18,5 +18,21 @@ layer_0/tile_data = PackedInt32Array(1638425, 0, 4, 1572889, 65536, 4, 1507353, 
 collision_layer = 0
 
 [node name="BasicEnemy" parent="." instance=ExtResource("3_cm0sd")]
-position = Vector2(57, -52)
+position = Vector2(135, -70)
+collision_layer = 0
+
+[node name="BasicEnemy2" parent="." instance=ExtResource("3_cm0sd")]
+position = Vector2(-37, -75)
+collision_layer = 0
+
+[node name="BasicEnemy3" parent="." instance=ExtResource("3_cm0sd")]
+position = Vector2(162, -11)
+collision_layer = 0
+
+[node name="BasicEnemy4" parent="." instance=ExtResource("3_cm0sd")]
+position = Vector2(120, 4)
+collision_layer = 0
+
+[node name="BasicEnemy5" parent="." instance=ExtResource("3_cm0sd")]
+position = Vector2(31, -70)
 collision_layer = 0
