@@ -1,7 +1,7 @@
 extends Camera2D
 
 var target_position = Vector2.ZERO
-var smoother = 15
+var ACCELERATION_SMOOTHING = 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,7 +11,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	acquire_target()
-	global_position = global_position.lerp(target_position, 1.0 - exp(-delta*smoother))
+	global_position = global_position.lerp(target_position, 1.0 - exp(-delta*ACCELERATION_SMOOTHING))
 
 func acquire_target():
 	var player_nodes = get_tree().get_nodes_in_group("player")

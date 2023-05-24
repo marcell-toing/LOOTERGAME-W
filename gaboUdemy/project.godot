@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="viewport"
 
 [input]
@@ -49,6 +51,8 @@ move_right={
 2d_physics/layer_1="Terrain"
 2d_physics/layer_2="Player"
 2d_physics/layer_3="Enemy"
+2d_physics/layer_4="EnemyCollision"
+2d_physics/layer_5="PlayerPickup"
 
 [rendering]
 

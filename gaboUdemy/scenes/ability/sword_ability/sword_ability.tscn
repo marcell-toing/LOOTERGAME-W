@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bjw5diuv5t13o"]
+[gd_scene load_steps=7 format=3]
 
+[ext_resource type="AudioStream" uid="uid://cpmbtjgiywb63" path="res://scenes/ability/sword_ability/sword_sound.mp3" id="1_1ktje"]
 [ext_resource type="Texture2D" uid="uid://cwgr6ns16i6k8" path="res://scenes/ability/sword_ability/sword_ability.png" id="1_fnxlt"]
-[ext_resource type="AudioStream" uid="uid://cr512lu5c68la" path="res://scenes/ability/sword_ability/pipe.mp3" id="1_omb8p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nbyie"]
 size = Vector2(30, 32)
@@ -89,17 +89,17 @@ tracks/2/keys = {
 }
 tracks/3/type = "audio"
 tracks/3/imported = false
-tracks/3/enabled = false
+tracks/3/enabled = true
 tracks/3/path = NodePath("AnimationPlayer/AudioStreamPlayer")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "clips": [{
-"end_offset": 2.4256,
-"start_offset": 0.0,
-"stream": ExtResource("1_omb8p")
+"end_offset": 0.0706212,
+"start_offset": 0.0138172,
+"stream": ExtResource("1_1ktje")
 }],
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0.2)
 }
 tracks/3/use_blend = true
 tracks/4/type = "value"

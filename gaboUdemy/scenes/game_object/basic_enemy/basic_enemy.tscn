@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://vqwxfayxnxth"]
+[gd_scene load_steps=6 format=3 uid="uid://18e8s3ngmmkh"]
 
-[ext_resource type="Texture2D" uid="uid://d173sh50jndyl" path="res://scenes/basic_enemy/basic_enemy.png" id="1_3iiie"]
-[ext_resource type="Script" path="res://scenes/basic_enemy/basic_enemy.gd" id="1_7q10l"]
+[ext_resource type="Texture2D" uid="uid://d173sh50jndyl" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_3iiie"]
+[ext_resource type="Script" path="res://scenes/game_object/basic_enemy/basic_enemy.gd" id="1_7q10l"]
+[ext_resource type="AudioStream" uid="uid://br11gvs7cp5nw" path="res://scenes/game_object/basic_enemy/basic_enemy_sound.mp3" id="3_0oiol"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pi34s"]
 radius = 12.0
@@ -10,7 +11,9 @@ radius = 12.0
 radius = 5.0
 
 [node name="BasicEnemy" type="CharacterBody2D" groups=["enemy"]]
-collision_layer = 0
+collision_layer = 8
+collision_mask = 9
+motion_mode = 1
 script = ExtResource("1_7q10l")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -28,3 +31,6 @@ offset = Vector2(0, -4)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_hnl3r")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_0oiol")
